@@ -32,6 +32,8 @@ class CurrencyController extends Controller
             $errors = $validator->errors();
             return response()->json(CurrencyModel::Error($errors->first())->toArray(), 400, [], JSON_PRETTY_PRINT);
         }
-        return response()->json(CurrencyModel::GetInstance($request->all(), ExtraCurrency::all())->toArray(), 200, [], JSON_PRETTY_PRINT);
+
+        $result = CurrencyModel::GetInstance($request->all(), ExtraCurrency::all())->toArray();
+        return response()->json($result, ($result['success']) ? 200 : 400, [], JSON_PRETTY_PRINT);
     }
 }
