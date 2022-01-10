@@ -13,8 +13,8 @@
 ## 安裝
 
 ```
-$ git clone 
-$ cd 
+$ git clone git@github.com:rc1021/asiayo-api-test.git
+$ cd asiayo-api-test
 $ composer install
 ```
 
@@ -22,13 +22,8 @@ $ composer install
 請修改 .env 的 `EXTRA_CURRENCY_API_URL` 或參考 .env.example 的設定
 
 ```
-APP_NAME=Laravel
-APP_ENV=local
-APP_KEY=base64:OAJ7hZAFo2utRGzlZnjQl0SVIUJUwU+utuwxX+Nt9RE=
-APP_DEBUG=true
-APP_URL=http://asiayo-api-test.test
-
 EXTRA_CURRENCY_API_URL=https://currency.extra.url
+...(略過)
 ```
 
 ## 啟動服務
@@ -72,3 +67,4 @@ $ cat result.txt
 
 ## 單元測試
 
+![單元測試](https://github.com/rc1021/asiayo-api-test/raw/main/unit_test.jpeg)
