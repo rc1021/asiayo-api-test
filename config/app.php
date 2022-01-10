@@ -2,6 +2,11 @@
 
 return [
 
+    // 設定匯率來源
+    'extra_currency' => [
+        'api_url' => env('EXTRA_CURRENCY_API_URL', false),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
