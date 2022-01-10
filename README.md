@@ -3,6 +3,10 @@
 
 僅提供 Asiayo Api 考題用
 
+## 專案結構
+
+![專案結構](https://github.com/rc1021/asiayo-api-test/raw/main/docs.png)
+
 ## 環境需求
 
 ```
